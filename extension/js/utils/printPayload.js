@@ -1,27 +1,6 @@
 function createPayload(product, number) {
     var ttText = ``
-    var printText = ` 
-
-          
-
-           
-
- 
-
-              
-
-                   
-
-                       
-
-                           
-
-                       
-
-                       
-
-                           
-
+    var printText = `
 ^XA
 
 ^FO15,15
@@ -30,19 +9,9 @@ function createPayload(product, number) {
 
 ^FO15,50
 
- 
-
- 
-
 ^CI28
 
 ^A0N,30,30^FH^FDPrice: ${product.price}€^FS
-
- 
-
- 
-
- 
 
 ^FO65,95^BY1
 
@@ -50,9 +19,8 @@ function createPayload(product, number) {
 
 ^FD${product.barCode}^FS
 
- 
-
-^XZ`
+^XZ
+`
     for (let i = 0; i < number; i++) { 
         ttText += printText
     }
