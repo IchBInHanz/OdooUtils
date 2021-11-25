@@ -8,7 +8,7 @@
                 "https://johnscomputer.odoo.com/*"
             ],
             "css": ["extension/css/src/main.css"],
-            "js": ["extension/js/utils/loaded.js", "extension/js/utils/sleep.js", "extension/js/src/index.js", "extension/js/utils/printPayload.js"]
+            "js": ["extension/js/utils/loaded.js", "extension/js/src/index.js", "extension/js/utils/printPayload.js"]
         }
     ],
     "permissions": [

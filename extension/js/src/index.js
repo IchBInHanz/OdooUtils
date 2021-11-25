@@ -21,7 +21,7 @@ async function run() {
     await waitUtilLoaded()
     document.querySelector('.o_search_options').innerHTML += `
     <input id="ou-num-print" type="number" value="1">
-    <button id="ou-print">Print</button>
+    <button id="ou-print">PRINT</button>
     `
     document.getElementById('ou-print').addEventListener('click', () =>{
         product.name = document.getElementsByName('name')[0].innerHTML
