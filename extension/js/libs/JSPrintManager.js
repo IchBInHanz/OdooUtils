@@ -1558,8 +1558,8 @@ var JSPM;
                                         JSPM.JSPrintManager._ses_cert = json.certificate;
                                         _this.send(JSON.stringify({ url: JSPM.JSPrintManager.license_url }), {
                                             type: "set_license",
-                                            on_update: function (v) { console.info("JSPrintManager License:", 'result' in v ? v['result'] : v); },
-                                            on_error: function (v) { console.warn("JSPrintManager License:", 'result' in v ? v['result'] : v); },
+                                            on_update: function (v) { },
+                                            on_error: function (v) { },
                                         });
                                         var verArray = json.version.split('.');
                                         if (verArray[0] + '.' + verArray[1] != JSPM.VERSION) {

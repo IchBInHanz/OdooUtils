@@ -1,14 +1,29 @@
 {
     "manifest_version": 2,
     "name": "OdooUtils",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "content_scripts": [
         {
             "matches": [
-                "https://johnscomputer.odoo.com/*"
+                "https://johnscomputer.odoo.com/*",
+                "https://johnscomputer-stagingbase-3836980.dev.odoo.com/*"
             ],
-            "css": ["extension/css/src/main.css"],
-            "js": ["extension/js/utils/loaded.js", "extension/js/libs/JSPrintManager.js", "extension/js/src/index.js", "extension/js/utils/printer.js"]
+            "css": [
+                "extension/css/src/functions/printArticle/main.css",
+                "extension/css/src/functions/alertOrder/main.css"
+            ],
+            "js": [
+                "extension/js/utils/loaded.js",
+                "extension/js/libs/JSPrintManager.js",
+                "extension/js/libs/firebase.min.js",
+                "extension/js/libs/firestore.min.js",
+                "extension/js/utils/printer.js",
+                "extension/js/src/functions/printArticle/main.js",
+                "extension/js/src/functions/alertOrder/main.js",
+                "extension/js/src/functions/removeBanner/main.js",
+                "extension/js/src/functions/setOrderUser/main.js",
+                "extension/js/src/index.js"
+            ]
         }
     ],
     "permissions": [

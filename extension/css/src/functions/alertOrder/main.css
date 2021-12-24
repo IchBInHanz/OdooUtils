@@ -1,0 +1,73 @@
+#ou-order-btn, #ou-modal-btn {
+    width: 9vw;
+    font-size: 1.08333333rem;
+    color: white;
+    background-color: #00A09D;
+    border: none;
+    padding: 4px 6px;
+    transition: 0.2s;
+    font-weight: 500;
+    border-radius: 0px;
+    outline: none;
+}
+
+#ou-order-btn:hover, #ou-modal-btn:hover {
+    background-color: #007A77;
+}
+
+
+#ou-modal {
+    display: block; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+  
+  /* Modal Content */
+#ou-modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 16px;
+    border: 1px solid #888;
+    width: 60vw;
+}
+
+#ou-modal-table {
+    width: 50vw;
+}
+
+/* #ou-modal-table, #ou-modal-td, #ou-modal-tr {
+} */
+
+#ou-modal-tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+#ou-modal-tr:hover {
+    background-color: #ddd;
+}
+
+#ou-modal-checkbox {
+    position: relative;
+    top: 3px;
+    height: 16px;
+    width: 16px;
+    border: 2px solid #353535;
+    border-radius: 0px;
+}
+
+#ou-modal-btn {
+    margin-top: 10px;
+}
+
+.ou-tabledance {
+    position: relative;
+    left: 16px;
+    cursor: pointer;
+}
