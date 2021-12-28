@@ -18,5 +18,5 @@ Notification.requestPermission().then(function(result) {
 
 removeBanner()
 printArticel()
-// setOrderUser()
+setOrderUser()
 // alertOrder()
