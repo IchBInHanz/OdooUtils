@@ -1,5 +1,18 @@
-console.log('OdooUtils Running...')
+console.log('%cOdooUtils Running...', "color: #875A7B; font-size: 3rem; font-weight: bold;")
 
+let users = {
+    cindy: "Cindy Bosch",
+    admin: "Administrator",
+    sav: "Samuel Scheen",
+    nils: "Samuel Scheen",
+    pep: "Samuel Scheen",
+    thep: "Samuel Scheen",
+    raph: "Raphael Orthmans",
+    john: "John's computers",
+    flo: "Florent Timsonet",
+    ced: "Cédric Bennai",
+    bb: "Bryan Drouven",
+}
 
 firebase.initializeApp({
     apiKey: "AIzaSyCsqL1DBtM6ZOJxBifNhd9jEVbSMeMMVHE",
@@ -18,5 +31,8 @@ Notification.requestPermission().then(function(result) {
 
 removeBanner()
 printArticel()
+setPosUser()
 setOrderUser()
+hideUnkownProducts()
+fritteVote()
 // alertOrder()

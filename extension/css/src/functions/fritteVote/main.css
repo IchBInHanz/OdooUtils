@@ -1,0 +1,53 @@
+#ou-fritte {
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+#ou-fritte > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center !important;
+    /* display: initial !important; */
+    padding: 20px 0;
+    font-size: 30px;
+    line-height: initial !important;
+}
+
+input {
+    font-size: 14px !important;
+    padding: 5px !important;
+    width: 90% !important;
+    position: relative !important;
+    left: 5%;
+}
+
+textarea {
+    font-size: 14px !important;
+    padding: 5px !important;
+    width: 90% !important;
+    position: relative !important;
+    left: 5%;
+}
+
+#ou-fritte-envoyer {
+    
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+table {
+    position: relative !important;
+    top: 4vh !important;
+    left: 5% !important;
+    width: 90% !important;
+    font-size: 22px !important;
+    font-weight: 400 !important;
+}

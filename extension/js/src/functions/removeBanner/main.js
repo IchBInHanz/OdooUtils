@@ -4,6 +4,6 @@ async function removeBanner() {
     try {
         document.getElementsByClassName('database_expiration_panel')[0].remove()
     } catch (error) {
-        console.log(error)
+        // console.log(error)
     }
 }

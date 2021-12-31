@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "OdooUtils",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "content_scripts": [
         {
             "matches": [
@@ -10,7 +10,8 @@
             ],
             "css": [
                 "extension/css/src/functions/printArticle/main.css",
-                "extension/css/src/functions/alertOrder/main.css"
+                "extension/css/src/functions/alertOrder/main.css",
+                "extension/css/src/functions/fritteVote/main.css"
             ],
             "js": [
                 "extension/js/utils/loaded.js",
@@ -21,13 +22,21 @@
                 "extension/js/src/functions/printArticle/main.js",
                 "extension/js/src/functions/alertOrder/main.js",
                 "extension/js/src/functions/removeBanner/main.js",
+                "extension/js/src/functions/setPosUser/main.js",
                 "extension/js/src/functions/setOrderUser/main.js",
+                "extension/js/src/functions/hideUnkownProducts/main.js",
+                "extension/js/src/functions/fritteVote/main.js",
                 "extension/js/src/index.js"
+            ],
+            "html": [
+                "extension/html/fritte.html"
             ]
         }
     ],
     "permissions": [
-        "storage"
+        "unlimitedStorage",
+        "tabs",
+        "webRequest"
     ],
     "icons": {
         "16": "icons/icon16.png",
